@@ -1,10 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: my-deployment
+  name: deploy
 spec:
   template:
     spec:
       containers:
-      - name: my-deployment
-        image: my-image
+      - name: frontend
+        image: frontend-image
