@@ -2,4 +2,4 @@ resources:
   - ../../../bases/frontend
 
 transformers:
-  - ../../../components/dev
+  - ../transformers
