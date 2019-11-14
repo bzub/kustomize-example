@@ -1,2 +1,2 @@
 resources:
-- transformer.yaml
+- namespace-transformer.yaml
