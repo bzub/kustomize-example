@@ -1,0 +1,14 @@
+apiVersion: builtin
+kind: NamespaceTransformer
+metadata:
+  name: not-important-to-example
+  namespace: company-prod
+fieldSpecs:
+- path: metadata/namespace
+  create: true
+- path: subjects
+  kind: RoleBinding
+  group: rbac.authorization.k8s.io
+- path: subjects
+  kind: ClusterRoleBinding
+  group: rbac.authorization.k8s.io
