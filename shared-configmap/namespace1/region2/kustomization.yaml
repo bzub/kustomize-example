@@ -1,0 +1,8 @@
+resources:
+  - ../base
+
+configMapGenerator:
+  - name: my-cm
+    behavior: merge
+    literals:
+      - REGION=region2

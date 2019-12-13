@@ -1,0 +1,8 @@
+resources:
+  - deployment.yaml
+
+configMapGenerator:
+  - name: my-cm
+    literals:
+      - FOO=bar
+      - REGION=default-region

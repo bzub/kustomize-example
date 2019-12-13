@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  template:
+    spec:
+      containers:
+        - name: my-deployment
+          image: my-image
+          cmd:
+            - /command
+            - --foo=$(FOO)
+            - --region=$(REGION)
+          envFrom:
+            - configMapRef:
+                name: my-cm
